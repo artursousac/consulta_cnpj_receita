@@ -6,7 +6,7 @@ def limpar_cnpj(cnpj):
 
 def buscar_dados_receita(cnpj):
     cnpj = limpar_cnpj(cnpj)
-    url = f"https://brasilapi.com.br/api/cnpj/v1/{cnpj}"
+    url = f"https://brasilapi.com.br/cnpj/v1/{cnpj}"
 
     try:
         response = requests.get(url, timeout=10)
